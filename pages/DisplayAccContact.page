@@ -1,0 +1,33 @@
+<apex:page Controller="MyController">
+    <apex:form >
+        <apex:pageBlock >            
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!Arecords}" var="temp" >
+                    <apex:column headerValue="Account Name" >
+                        <apex:commandLink value="{!temp.name}"  action="{!method1}" >
+                            <apex:param name="id" value="{!temp.id}" assignTo="{!aid}" />
+                        </apex:commandLink>
+                    </apex:column>
+                    <apex:column value="{!temp.id}" />
+                    <apex:column value="{!temp.phone}" />
+                    <apex:column value="{!temp.billingcity}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock >            
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!Brecords}" var="temp" >
+                    <apex:column headerValue="Contact Name" >
+                        <apex:commandLink value="{!temp.name}"  action="{!method1}" >
+                            <apex:param name="id" value="{!temp.id}" assignTo="{!aid}" />
+                        </apex:commandLink>
+                    </apex:column>
+                    <apex:column value="{!temp.id}" />
+                    <apex:column value="{!temp.phone}" />
+                    <apex:column value="{!temp.email}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

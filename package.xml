@@ -2,6 +2,14 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>47.0</version>
     <types>
+        <members>MyController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DisplayAccContact</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>AppSwitcher</members>
         <members>Salesforce1</members>
         <name>AppMenu</name>
