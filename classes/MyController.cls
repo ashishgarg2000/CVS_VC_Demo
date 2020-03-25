@@ -10,6 +10,7 @@ Global with sharing class MyController {
     {
         pagereference pr = new PageReference('/' + aid);
         return pr;  
+        <!-- This is added to produce Merge conflict scenario -->
     }  
     
     public List<Contact> getBrecords()
