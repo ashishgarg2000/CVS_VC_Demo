@@ -17,6 +17,7 @@ Global with sharing class MyController {
     
     public List<Contact> getBrecords()
     {
-        return [select id, Title,name, phone, email from Contact limit 100];
+        return [select id, Title,name, phone, email from Contact limit 50];
+        /* this is the sample change */
     }
 }
