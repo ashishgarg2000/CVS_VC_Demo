@@ -1,4 +1,4 @@
-Global with sharing class MyController {
+Public with sharing class MyController {
 
     public string aid{set;get;}
     public List<Account> getArecords()
@@ -17,7 +17,7 @@ Global with sharing class MyController {
     
     public List<Contact> getBrecords()
     {
-        return [select id, Title,name, phone, email from Contact limit 50];
+        return [select id, Title,name, phone, email from Contact limit 150];
         /* this is the sample change */
     }
 }
