@@ -1,4 +1,4 @@
-Public with sharing class MyController {
+Global with sharing class MyController {
 
     public string aid{set;get;}
     public List<Account> getArecords()
