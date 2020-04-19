@@ -2067,6 +2067,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Test_Object__c.Field_One__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>TimeSlot.MaxAppointments</field>
         <readable>false</readable>
@@ -2342,6 +2347,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test_Object__c-Test Object Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>TimeSlot-Time Slot Layout</layout>
